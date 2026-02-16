@@ -6,6 +6,8 @@ import {
   Activity,
   CalendarDays,
   Dumbbell,
+  Instagram,
+  Linkedin,
   LogOut,
   Menu,
   SendHorizonal,
@@ -371,16 +373,12 @@ export default function Home() {
 
           <section className="mt-18 rounded-3xl border border-slate-200 bg-white/85 p-6 shadow-xl shadow-slate-300/30 sm:p-8">
             <div className="max-w-3xl space-y-3">
-              <p className="inline-flex rounded-full border border-teal-200 bg-teal-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-teal-800">
-                AI-driven Product Engineering
-              </p>
               <h2 className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">
-                Voce ja investe R$ 1.700/mes na caneta. Garanta que esse investimento vire
-                resultado.
+                Cuidado nutricional acolhedor para cada etapa do seu tratamento.
               </h2>
               <p className="text-base leading-relaxed text-slate-600">
-                A DoseCerta custa de 8% a 15% do valor medio do tratamento e entrega suporte
-                nutricional para reduzir enjoo, aumentar adesao e proteger massa magra.
+                Escolha o plano que melhor combina com sua rotina e receba orientacao pratica para
+                comer melhor, reduzir enjoo e preservar massa magra com constancia.
               </p>
             </div>
 
@@ -456,6 +454,40 @@ export default function Home() {
             </div>
           </section>
         </main>
+
+        <footer className="border-t border-slate-200/80 bg-white/70 backdrop-blur">
+          <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 py-8 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+            <div>
+              <p className="text-base font-semibold text-slate-900">DoseCerta Nutri</p>
+              <p className="mt-1 max-w-xl text-sm leading-relaxed text-slate-600">
+                Cuidado nutricional acolhedor para quem usa canetas, com orientacoes praticas para
+                seguir com seguranca e constancia no dia a dia.
+              </p>
+              <p className="mt-2 text-xs text-slate-500">
+                O assistente nao substitui acompanhamento medico e nutricional individualizado.
+              </p>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
+              >
+                <Instagram size={16} /> Instagram
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
+              >
+                <Linkedin size={16} /> LinkedIn
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
     );
   }
