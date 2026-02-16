@@ -1,37 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mealcycle.co
 
-## Getting Started
+Aplicacao single-page em PT-BR para suporte nutricional de pacientes em uso de canetas como Ozempic, Mounjaro e Wegovy.
 
-First, run the development server:
+Projeto focado em UX premium, com fluxo completo de onboarding + dashboard e assistente nutricional com OpenAI.
+
+## Stack
+
+- Next.js (App Router) + TypeScript
+- Tailwind CSS
+- Lucide React
+- Recharts
+- OpenAI SDK (`openai`)
+
+## O que voce encontra no app
+
+- Landing page com proposta clinica clara e CTA para iniciar plano
+- Onboarding em 3 etapas (medicacao, fase da dose, analise de proteina)
+- Dashboard com:
+  - Plano semanal de refeicoes com macros e tags
+  - Progresso semanal em grafico (`ComposedChart`)
+  - Chat nutricional com fallback quando nao houver chave de API
+
+## Build log rapido (Coding Assistants)
+
+Este projeto foi bootstrapado rapidamente com apoio de assistentes de codigo.
+
+- Ferramenta: `OpenCode`
+- Modelo: `GPT-5.3` (`openai/gpt-5.3-codex`)
+- Papel dos assistentes: acelerar scaffold, arquitetura de componentes, integracao de API e refinamento de UI/UX
+
+Objetivo: demonstrar velocidade de prototipacao com qualidade de produto e boas praticas de engenharia.
+
+## Executar localmente
+
+1. Instale dependencias:
+
+```bash
+npm install
+```
+
+2. Crie `.env.local` com sua chave da OpenAI:
+
+```bash
+OPENAI_API_KEY=sua_chave_aqui
+```
+
+3. Rode o projeto:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` inicia ambiente local
+- `npm run lint` roda ESLint
+- `npm run build` gera build de producao
 
-## Learn More
+## Deploy na Vercel
 
-To learn more about Next.js, take a look at the following resources:
+- Suba o projeto para GitHub
+- Importe na Vercel
+- Configure `OPENAI_API_KEY` em Project Settings > Environment Variables
+- Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Publicacao no GitHub
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Como este repositorio e publico:
 
-## Deploy on Vercel
+- nao commitar `.env.local`
+- nao expor chaves em client-side
+- manter segredos apenas nas variaveis da Vercel/GitHub
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Observacao clinica
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# meals-glp
+O assistente de IA apoia decisao nutricional do dia a dia, mas nao substitui acompanhamento medico e nutricional individualizado.
