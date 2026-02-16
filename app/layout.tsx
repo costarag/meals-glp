@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mealcycle.co | Nutricao para canetas",
+  title: "DoseCerta Nutri | Nutricao para canetas",
   description:
-    "Mealcycle.co e um painel nutricional para pacientes em uso de Ozempic, Mounjaro e Wegovy.",
+    "DoseCerta Nutri e um painel nutricional para pacientes em uso de canetas para emagrecimento e diabetes, como Ozempic, Mounjaro e Wegovy.",
 };
 
 export default function RootLayout({

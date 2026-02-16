@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import { NextResponse } from "next/server";
 
 const FALLBACK_MESSAGE =
-  "No momento estou em modo offline. Priorize pequenas porcoes ricas em proteina (iogurte grego, ovo, frango desfiado), hidratacao em goles e evite alimentos muito gordurosos quando houver enjoo.";
+  "No momento estou em modo offline. Hoje priorize pequenas porcoes com proteina (iogurte grego, ovo, frango desfiado), hidratacao em goles e evite refeicoes muito gordurosas se houver enjoo.";
 
 export async function POST(request: Request) {
   try {
@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     const response = await client.responses.create({
       model: "gpt-4.1-mini",
       instructions:
-        "Voce e um nutricionista brasileiro especialista em pacientes em uso de canetas como Ozempic, Mounjaro e Wegovy. Responda em PT-BR, com acolhimento clinico e praticidade. Mantenha respostas com no maximo 100 palavras, foque em proteina, hidratacao, manejo de nausea e preservacao de massa magra. Nao substitui consulta medica.",
+        "Voce e um nutricionista brasileiro especialista em pacientes que usam canetas para emagrecimento e diabetes, como Ozempic, Mounjaro e Wegovy. Responda em PT-BR com acolhimento, objetividade e foco pratico para rotina brasileira. Limite em 100 palavras. Priorize proteina, hidratacao, manejo de enjoo, baixa fome e preservacao de massa magra. Inclua alerta curto quando houver sinais de risco. Nao substitui consulta medica.",
       input: [
         {
           role: "user",

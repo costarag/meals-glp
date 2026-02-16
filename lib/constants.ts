@@ -19,7 +19,7 @@ export const MOCK_MEALS: Meal[] = [
   {
     id: "meal-1",
     title: "Bowl de frango com quinoa",
-    description: "Textura macia, facil digestao e alta saciedade com baixo volume.",
+    description: "Prato leve, de facil digestao e com proteina alta em porcao enxuta.",
     imageUrl:
       "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80",
     tags: ["Alta Proteina", "Baixo IG"],
@@ -29,7 +29,7 @@ export const MOCK_MEALS: Meal[] = [
   {
     id: "meal-2",
     title: "Salmão assado com pure de couve-flor",
-    description: "Fonte densa de proteina e omega-3 para suporte muscular.",
+    description: "Combina proteina de alta qualidade e textura confortavel para dias sensiveis.",
     imageUrl:
       "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1000&q=80",
     tags: ["Alta Proteina", "Leve para Nausea"],
@@ -39,7 +39,7 @@ export const MOCK_MEALS: Meal[] = [
   {
     id: "meal-3",
     title: "Omelete proteico com cottage",
-    description: "Refeicao pequena em volume, rica em leucina e de preparo rapido.",
+    description: "Opcao rapida para bater proteina quando a fome esta curta.",
     imageUrl:
       "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=80",
     tags: ["Alta Proteina", "Leve para Nausea"],
@@ -49,7 +49,7 @@ export const MOCK_MEALS: Meal[] = [
   {
     id: "meal-4",
     title: "Iogurte grego, granola e frutas",
-    description: "Opcao pratica para janela de fome curta com boa densidade nutricional.",
+    description: "Lanche pratico para janela curta de fome com boa densidade nutricional.",
     imageUrl:
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1000&q=80",
     tags: ["Baixo IG", "Leve para Nausea"],
@@ -59,7 +59,7 @@ export const MOCK_MEALS: Meal[] = [
   {
     id: "meal-5",
     title: "Carne magra desfiada com abobora",
-    description: "Alto teor proteico com carboidrato de digestao gradual.",
+    description: "Conforto alimentar com proteina robusta e energia de digestao gradual.",
     imageUrl:
       "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80",
     tags: ["Alta Proteina", "Baixo IG"],
@@ -69,7 +69,7 @@ export const MOCK_MEALS: Meal[] = [
   {
     id: "meal-6",
     title: "Tofu grelhado com arroz integral",
-    description: "Alternativa vegetal para variar fontes de aminoacidos no plano.",
+    description: "Alternativa vegetal para variar aminoacidos sem abrir mao da meta proteica.",
     imageUrl:
       "https://images.unsplash.com/photo-1604908176997-4312c36b3f44?auto=format&fit=crop&w=1000&q=80",
     tags: ["Alta Proteina", "Baixo IG"],

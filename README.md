@@ -1,6 +1,8 @@
-# Mealcycle.co
+# DoseCerta Nutri
 
-Aplicacao single-page em PT-BR para suporte nutricional de pacientes em uso de canetas como Ozempic, Mounjaro e Wegovy.
+Aplicacao single-page em PT-BR para quem usa canetas para emagrecimento e diabetes (Ozempic, Mounjaro, Wegovy e similares).
+
+Proposta: transformar orientacao nutricional tecnica em um plano simples, acolhedor e pratico para o dia a dia brasileiro.
 
 Projeto focado em UX premium, com fluxo completo de onboarding + dashboard e assistente nutricional com OpenAI.
 
@@ -21,15 +23,15 @@ Projeto focado em UX premium, com fluxo completo de onboarding + dashboard e ass
   - Progresso semanal em grafico (`ComposedChart`)
   - Chat nutricional com fallback quando nao houver chave de API
 
-## Build log rapido (Coding Assistants)
+## AI-driven Product Engineering
 
-Este projeto foi bootstrapado rapidamente com apoio de assistentes de codigo.
+Este projeto foi bootstrapado rapidamente com mindset de Product Engineer apoiado por IA: descobrir problema, prototipar rapido, validar fluxo completo e entregar com qualidade de deploy.
 
 - Ferramenta: `OpenCode`
 - Modelo: `GPT-5.3` (`openai/gpt-5.3-codex`)
-- Papel dos assistentes: acelerar scaffold, arquitetura de componentes, integracao de API e refinamento de UI/UX
+- Papel da IA: acelerar scaffold, arquitetura de componentes, integracao de API, iteracao de copy e refinamento de UI/UX
 
-Objetivo: demonstrar velocidade de prototipacao com qualidade de produto e boas praticas de engenharia.
+Objetivo: demonstrar velocidade de prototipacao com criterio de produto, foco em experiencia do usuario e boas praticas de engenharia.
 
 ## Executar localmente
 
