@@ -1,81 +1,65 @@
-# DoseCerta Nutri
+# Pleno
+> Nutrition companion for GLP-1 patients
 
-Aplicacao single-page em PT-BR para quem usa canetas para emagrecimento e diabetes (Ozempic, Mounjaro, Wegovy e similares).
+[![Live](https://img.shields.io/badge/Live-meals--glp.vercel.app-black?style=flat-square)](https://meals-glp.vercel.app/) ![Next.js](https://img.shields.io/badge/Next.js_16-black?style=flat-square&logo=next.js) ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
-Proposta: transformar orientacao nutricional tecnica em um plano simples, acolhedor e pratico para o dia a dia brasileiro.
+![Pleno screenshot](https://api.microlink.io/?url=https%3A%2F%2Fmeals-glp.vercel.app%2F&screenshot=true&meta=false&embed=screenshot.url)
 
-Projeto focado em UX premium, com fluxo completo de onboarding + dashboard e assistente nutricional com OpenAI.
+**→ Live at [meals-glp.vercel.app](https://meals-glp.vercel.app/)**
 
-## Stack
+---
 
-- Next.js (App Router) + TypeScript
-- Tailwind CSS
-- Lucide React
-- Recharts
-- OpenAI SDK (`openai`)
+## The Problem
 
-## O que voce encontra no app
+Patients on GLP-1 medications (Ozempic, Mounjaro, Wegovy) invest ~R$1,700/month in their treatment but face nausea, drastically reduced appetite, and real risk of muscle loss — with nutrition guidance limited to monthly appointments. They make daily food decisions without support, undermining their results.
 
-- Landing page com proposta clinica clara e CTA para iniciar plano
-- Onboarding em 3 etapas (medicacao, fase da dose, analise de proteina)
-- Dashboard com:
-  - Plano semanal de refeicoes com macros e tags
-  - Progresso semanal em grafico (`ComposedChart`)
-  - Chat nutricional com fallback quando nao houver chave de API
+## The Solution
 
-## AI-driven Product Engineering
+Pleno is a companion app that protects your investment in the medication. It delivers phase-aware meal plans (initiation → titration → maintenance) focused on protein preservation, plus an AI nutrition assistant for daily decisions. The core insight: GLP-1 nutrition isn't about eating less — it's about eating the *right things* to protect muscle and sustain the drug's effect.
 
-Este projeto foi bootstrapado rapidamente com mindset de Product Engineer apoiado por IA: descobrir problema, prototipar rapido, validar fluxo completo e entregar com qualidade de deploy.
+## Key Features
 
-- Ferramenta: `OpenCode`
-- Modelo: `GPT-5.3` (`openai/gpt-5.3-codex`)
-- Papel da IA: acelerar scaffold, arquitetura de componentes, integracao de API, iteracao de copy e refinamento de UI/UX
+- **Phase-aware meal plans** adapted to your GLP-1 stage (high-protein, low-GI, easy on nausea)
+- **Protein targeting** calculated from your current weight and goals
+- **AI nutrition chat** for real-time daily guidance
+- **Progress tracking** with weight × protein intake charts over time
+- **3-step onboarding** — medication, dose phase, protein goal
 
-Objetivo: demonstrar velocidade de prototipacao com criterio de produto, foco em experiencia do usuario e boas praticas de engenharia.
+## Business Model
 
-## Executar localmente
+Recurring subscription anchored on ROI: for patients spending R$1,700/month on GLP-1, protecting that investment with R$149–249/month in nutrition support is a straightforward value equation.
 
-1. Instale dependencias:
+| Plan | Price | Includes |
+|------|-------|----------|
+| Trial | R$19 / 7 days | Full access |
+| Essencial | R$149 / month | Meal plan + AI chat |
+| Premium | R$249 / month | Meal plan + AI chat + advanced progress analytics |
+
+Expansion path: B2B2C partnerships with clinics and endocrinologists → acquisition by health operator, telemedicine platform, or pharma group.
+
+## Tech Stack
+
+| Layer | Choice |
+|-------|--------|
+| Framework | Next.js 16 (App Router) |
+| AI | OpenAI `gpt-4.1-mini` |
+| Language | TypeScript |
+| Runtime | Bun |
+| Styling | Tailwind CSS 4 |
+| Charts | Recharts |
+| Icons | Lucide React |
+| Hosting | Vercel |
+
+## Running Locally
 
 ```bash
-npm install
+bun install
+cp .env.example .env.local  # add your OPENAI_API_KEY
+bun dev
 ```
 
-2. Crie `.env.local` com sua chave da OpenAI:
+Open `http://localhost:3000`.
 
-```bash
-OPENAI_API_KEY=sua_chave_aqui
-```
+---
 
-3. Rode o projeto:
-
-```bash
-npm run dev
-```
-
-Abra `http://localhost:3000`.
-
-## Scripts
-
-- `npm run dev` inicia ambiente local
-- `npm run lint` roda ESLint
-- `npm run build` gera build de producao
-
-## Deploy na Vercel
-
-- Suba o projeto para GitHub
-- Importe na Vercel
-- Configure `OPENAI_API_KEY` em Project Settings > Environment Variables
-- Deploy
-
-## Publicacao no GitHub
-
-Como este repositorio e publico:
-
-- nao commitar `.env.local`
-- nao expor chaves em client-side
-- manter segredos apenas nas variaveis da Vercel/GitHub
-
-## Observacao clinica
-
-O assistente de IA apoia decisao nutricional do dia a dia, mas nao substitui acompanhamento medico e nutricional individualizado.
+*Bootstrapped with AI coding assistants in hours, not weeks.*
